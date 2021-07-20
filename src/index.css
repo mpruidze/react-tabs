@@ -5,36 +5,6 @@ Variables
 */
 
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(184, 91%, 17%);
-  --clr-primary-2: hsl(185, 84%, 25%);
-  --clr-primary-3: hsl(185, 81%, 29%);
-  --clr-primary-4: hsl(184, 77%, 34%);
-  --clr-primary-5: #2caeba;
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(185, 57%, 50%);
-  --clr-primary-7: hsl(184, 65%, 59%);
-  --clr-primary-8: hsl(184, 80%, 74%);
-  --clr-primary-9: hsl(185, 94%, 87%);
-  --clr-primary-10: hsl(186, 100%, 94%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-
   --clr-1: #0b0c10;
   --clr-2: #1f2833;
   --clr-3: #c5c6c7;
@@ -66,25 +36,16 @@ Global Styles
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* background: var(--clr-grey-10); */
-  background: var(--clr-1);
+  /* background: var(--clr-1); */
   background-image: linear-gradient(
     80deg,
     var(--clr-1),
     var(--clr-2),
     var(--clr-1)
   );
-
-  /* color: var(--clr-grey-1); */
   color: var(--clr-3);
   line-height: 1.5;
   font-size: 0.875rem;
-}
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
 }
 h1,
 h2,
@@ -198,18 +159,16 @@ Jobs
   cursor: pointer;
   padding: 0.25rem 0;
   line-height: 1;
-  outline-color: var(--clr-primary-10);
+  outline-color: var(--clr-4);
+  color: var(--clr-3);
 }
 .job-btn:hover {
-  color: var(--clr-primary-5);
-  box-shadow: 0 2px var(--clr-primary-5);
-  border: 2px solid var(--clr-4);
+  color: var(--clr-4);
+  box-shadow: 0 2px var(--clr-4);
 }
 .active-btn {
-  /* color: var(--clr-primary-5); */
-  color: var(--clr-white);
-  border: 2px solid var(--clr-4);
-  box-shadow: 0 2px var(--clr-primary-5);
+  color: var(--clr-4);
+  box-shadow: 0 2px var(--clr-4);
 }
 
 .job-info h3 {
@@ -262,35 +221,9 @@ Jobs
     margin-bottom: 1rem;
   }
   .active-btn {
-    box-shadow: -2px 0 var(--clr-primary-5);
+    box-shadow: -2px 0 var(--clr-4);
   }
   .job-btn:hover {
-    box-shadow: -2px 0 var(--clr-primary-5);
+    box-shadow: -2px 0 var(--clr-4);
   }
-}
-.btn {
-  text-transform: uppercase;
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
-  padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
-  font-weight: 700;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  font-size: 0.875rem;
-  border: 2px solid transparent;
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
-  display: block;
-  width: 12rem;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 3rem;
-}
-.btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
-}
-.center-btn {
 }

@@ -17,6 +17,7 @@ function App() {
     } catch (error) {
       setLoading(false);
       console.log(error);
+      throw new Error(error)
     }
   }
   useEffect(() => {
@@ -30,7 +31,7 @@ function App() {
       </section>
     )
   };
-
+ 
   const { company, dates, duties, title } = jobs[value];
   return (
     <section className="section">
@@ -41,7 +42,14 @@ function App() {
       <div className="jobs-center">
         {/* btn container */}
         <div className="btn-container">
-
+          {jobs.map((item,index) => {
+            return (
+              <button key={item.id} type='button'  
+              onClick={()=>setValue(index)}
+              className={`job-btn ${index === value && 'active-btn'}`}
+              >{item.company}</button>
+            )
+          })}
         </div>
         {/* job info */}
         <article className="job-info">
