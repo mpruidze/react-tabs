@@ -15,9 +15,8 @@ function App() {
       setJobs(data);
       setLoading(false);
     } catch (error) {
-      setLoading(false);
       console.log(error);
-      throw new Error(error)
+     
     }
   }
   useEffect(() => {
